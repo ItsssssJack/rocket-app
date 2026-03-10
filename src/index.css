@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hero-bg {
+    background: url('/hero-bg.png') center center / cover no-repeat;
+  }
+  .cta-bg {
+    background: url('/rocket-cta.png') center center / cover no-repeat;
+  }
+  .bg-pan-anim {
+    animation: subtle-pan 40s ease-in-out infinite;
+    overflow: hidden;
+    background-size: 150% 150%;
+  }
+  .glass-card {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-2xl shadow-lg;
+  }
+}
+
+body {
+  @apply bg-bg-dark text-slate-100 font-body overflow-x-hidden min-h-screen antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display tracking-tight text-white;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090919;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5038f0;
+}
