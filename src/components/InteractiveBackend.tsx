@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Database, Lock, Cloud, Workflow, Terminal } from 'lucide-react';
+import { Database, Lock, Cloud, Workflow, Terminal, Server } from 'lucide-react';
 
 const services = [
     {
